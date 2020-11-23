@@ -110,6 +110,10 @@ jQuery(document).ready(function ($) {
     var date = $('#shortlistDate').val();
     var number = $('#shortlistPeople').val();
 
+    if (!location || !date || !number) {
+      return;
+    }
+
     $('.shortlist-form-summary').addClass('active');
     $('.shortlist-form-summary-data-text').html(`${location}, ${date}, ${number}`)
   });
@@ -340,7 +344,11 @@ jQuery(document).ready(function ($) {
 
   $('#shortlistPeople').focusin(function () {
     var fieldVal = parseInt($(this).val().replace(/[^0-9\.]+/g, ""));
-    $(this).val(fieldVal);
+    if (!fieldVal || isNaN(fieldVal)) {
+      $(this).val('');
+    } else {
+      $(this).val(fieldVal);
+    }
   });
 
   $('#shortlistPeople').focusout(function () {

@@ -196,7 +196,7 @@
             -webkit-appearance: none;
         }
 
-        button[type="submit"] {
+        #shortlistBtn {
             font-family: $font-1;
             font-size: 25px;
             font-weight: 700;
@@ -204,12 +204,14 @@
             color: #fff;
             background-color: $color-red;
             border: 0;
+            border-radius: 6px;
             padding: 13px 57px;
             cursor: pointer;
 
             &:hover,
             &:focus {
                 outline: none;
+                background-color: darken($color-red, 5%);
             }
 
             img {
@@ -224,9 +226,11 @@
             width: 792px;
             padding: 47px 155px 43px;
             background-color: #fff;
+            opacity: 0;
             transition: all .2s ease-in;
 
             &.active {
+                opacity: 1;
                 transform: translate(-50%, -50%);
             }
 
@@ -282,7 +286,9 @@
                     }
                 }
 
-                button[type="submit"] {
+                #shortlistSubmit {
+                    font-family: $font-1;
+                    font-size: 19px;
                     color: #fff;
                     background-color: $color-red;
                     border-radius: 6px;
@@ -290,8 +296,10 @@
                     height: 41px;
                     @include margin-auto;
                     padding: 0;
+                    border-color: transparent;
                     display: block;
                     text-align: center;
+                    cursor: pointer;
 
                     img {
                         width: 21px;
