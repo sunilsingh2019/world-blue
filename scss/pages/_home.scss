@@ -68,6 +68,12 @@
     &-homesub {
         padding: 54px 0 96px;
     }
+
+    @media (min-width: 1201px) {
+        &-infoform {
+            padding-top: 0px;
+        }
+    }
 }
 
 .hero-banner {
@@ -85,9 +91,124 @@
             height: 100%;
             object-fit: cover;
         }
+
+        &::after {
+            content: "";
+            @include absoldefault;
+            background-color: $color-vlight-blue;
+            opacity: .6;
+            mix-blend-mode: soft-light;
+        }
     }
 
+    &-bg {
+        position: absolute;
+        top: 113px;
+        left: -286px;
+        width: 656px;
 
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &-text {
+        color: #fff;
+        @include absolcenter;
+        width: 100%;
+        max-width: 702px;
+        @include margin-auto;
+        text-align: center;
+    }
+
+    &-subtitle {
+        font-family: $font-1;
+        font-size: 35px;
+        font-weight: 300;
+    }
+
+    &-title {
+        font-family: $font-1;
+        font-size: 67px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    &-scroll {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        font-family: $font-1;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2.7px;
+        text-align: center;
+        color: $color-sub;
+
+        img {
+            display: block;
+            width: 8px;
+            margin-top: 15px;
+            margin-bottom: 36px;
+            @include margin-auto;
+        }
+    }
+
+    &-info {
+        &-cont {
+            position: absolute;
+            top: 168px;
+            left: 159px;
+            width: 100%;
+            max-width: 392px;
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 157px;
+            margin-bottom: 43px;
+        }
+
+        .divider {
+            width: 100%;
+            border-bottom: 1px solid $color-sub;
+
+            &-1 {
+                margin-top: 43px;
+                margin-bottom: 29px;
+            }
+
+            &-2 {
+                margin-top: 44px;
+                margin-bottom: 44px;
+            }
+        }
+
+        span {
+            color: $color-main;
+            display: block;
+            font-family: $font-1;
+            font-size: 23px;
+            font-weight: 600;
+            margin-bottom: 36px;
+            line-height: 33px;
+
+            a {
+                &:hover {
+                    color: $color-sub;
+                }
+            }
+        }
+
+        h3 {
+            color: $color-main;
+            font-family: $font-1;
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 50px;
+        }
+    }
 
     &-breadcrumbs {
         position: absolute;
@@ -120,6 +241,47 @@
                         color: #B9B9B9;
                     }
                 }
+            }
+        }
+    }
+
+    @media (max-width: 1700px) {
+        &-info-cont {
+            left: 90px;
+            max-width: 200px;
+
+            span {
+                font-size: 16px;
+                line-height: normal;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-size: 20px;
+                line-height: normal;
+            }
+
+            .divider {
+
+                &-1,
+                &-2 {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1400px) {
+        &-info-cont {
+            max-width: 150px;
+
+            span {
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 18px;
             }
         }
     }
@@ -524,6 +686,16 @@
             padding: 73px 132px 123px 129px;
         }
 
+        input,
+        select {
+
+            &,
+            &:hover,
+            &:focus {
+                outline: none;
+            }
+        }
+
         .heading-mini {
             margin-bottom: 12px;
         }
@@ -534,6 +706,7 @@
 
         &-selectjs {
             .select2-container--default .select2-selection--single .select2-selection__rendered {
+                font-size: 20px;
                 padding: 6px 21px 12px 20px;
             }
 
@@ -599,6 +772,14 @@
             margin-bottom: 66px;
         }
 
+        .form-notice {
+            border-color: #0F3571;
+
+            &-mt-lg {
+                margin-top: 156px;
+            }
+        }
+
         &-box {
             padding: 11px 19px;
             border: 1px solid #D0D1D0;
@@ -632,13 +813,42 @@
                 }
             }
 
+            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                font-size: 20px;
+            }
+
+            .select2 {
+                border: 1px solid transparent;
+                border-radius: 6px;
+                outline: none;
+
+                &.select2-container--open {
+                    border: 1px solid #d0d1d0;
+                }
+
+
+                &:hover,
+                &:focus,
+                *:hover,
+                *:focus {
+                    outline: none;
+                }
+            }
+
             &-location {
                 .form-group {
-                    margin-bottom: 23px;
+                    padding-top: 11.5px;
+                    padding-bottom: 11.5px;
+                    // margin-bottom: 23px;
+                }
+
+                &-item:not(:first-child) {
+                    border-top: 1px solid rgba(#000, .1);
                 }
 
                 &-btn {
                     width: 100%;
+                    font-size: 20px;
                     display: block;
                     background-color: transparent;
                     padding: 14px 0;
@@ -719,24 +929,6 @@
 
         }
 
-        &-notice {
-            border: 1px solid #0F3571;
-            border-radius: 6px;
-            padding: 15px 10px;
-            margin-top: 156px;
-            margin-bottom: 30px;
-
-            p {
-                color: #959595;
-                font-family: $font-1;
-                font-size: 19px;
-                font-weight: 400;
-                max-width: 632px;
-                @include margin-auto;
-                margin-bottom: 0;
-                line-height: normal;
-            }
-        }
 
         button[type="submit"] {
             font-family: $font-1;

@@ -621,7 +621,7 @@
                             <div class="homeenq-form-box-col col-xl-4">
                               <div class="form-group form-group-hasicon">
                                 <img class="form-group-icon" src="images/icons/map-marker.svg" alt="">
-                                <select class="select-js-trigger" name="country">
+                                <select class="select-js-trigger" name="country[]">
                                   <option selected disabled>Country</option>
                                   <option>Australia</option>
                                   <option>China</option>
@@ -637,7 +637,7 @@
                             </div>
                             <div class="homeenq-form-box-col col-xl-4">
                               <div class="form-group">
-                                <select class="select-js-trigger" name="City">
+                                <select class="select-js-trigger" name="city[]">
                                   <option selected disabled>City</option>
                                   <option>Australia</option>
                                   <option>Chinda</option>
@@ -653,7 +653,7 @@
                             </div>
                             <div class="homeenq-form-box-col col-xl-4">
                               <div class="form-group">
-                                <select class="select-js-trigger" name="Suburb">
+                                <select class="select-js-trigger" name="suburb[]">
                                   <option selected disabled>Suburb</option>
                                   <option>Australia</option>
                                   <option>Chinda</option>
@@ -766,10 +766,21 @@
                         <input type="text" name="mobile" placeholder="Mobile Number">
                       </div>
                       <div class="custom-checkbox">
-                        <input id="checkboxBookSomeone" class="custom-checkbox-input" type="checkbox"
+                        <input id="primaryGuestToggle" class="custom-checkbox-input" type="checkbox"
                           name="i am booking someone else" value="i am booking someone else">
-                        <label for="checkboxBookSomeone" class="custom-checkbox-label">I’m booking for someone
+                        <label for="primaryGuestToggle" class="custom-checkbox-label">I’m booking for someone
                           else</label>
+                      </div>
+                      <div class="primary-guest-box">
+                        <div class="form-group">
+                          <input type="text" name="name-primary" placeholder="Name of Primary Guest">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" name="email-primary" placeholder="Primary Guest Email">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" name="mobile-primary" placeholder="Primary Guest Mobile Number">
+                        </div>
                       </div>
                       <h4 class="heading-mini homeenq-form-mt-sm">What else?</h4>
                       <div class="homeenq-form-row-inner row homeenq-form-selectjs align-items-center">
@@ -843,7 +854,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="homeenq-form-notice">
+                  <div class="form-notice form-notice-mt-lg">
                     <p>Anything else? Early Check In? Late Check In? Baby’s Cot/High Chair.</p>
                     <p>Tell us what you need and we’ll do our best to accommodate it.</p>
                   </div>

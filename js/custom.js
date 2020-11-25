@@ -85,7 +85,9 @@ jQuery(document).ready(function ($) {
   //   console.log('tatatat')
   // });
 
-  $('.select-js-trigger').select2();
+  $('.select-js-trigger').select2({
+    minimumResultsForSearch: -1
+  });
 
   $('#shortlistDate').datepicker({
     dateFormat: "d MM, yy",
@@ -117,6 +119,34 @@ jQuery(document).ready(function ($) {
     $('.shortlist-form-summary').addClass('active');
     $('.shortlist-form-summary-data-text').html(`${location}, ${date}, ${number}`)
   });
+
+  $('.homeenq-form-box-location-btn').click(function () {
+    var locationBox = $(this).prev('.homeenq-form-box-location-item').clone();
+    locationBox.find('.select2').remove();
+    locationBox.find('.select2-hidden-accessible').removeClass('select2-hidden-accessible');
+
+    $(this).parent().prepend(locationBox);
+    $('.select-js-trigger').select2({
+      minimumResultsForSearch: -1
+    });
+  });
+
+  if ($('.primary-guest-box')[0]) {
+    var boxDiv = $('.primary-guest-box');
+    boxDiv.remove();
+
+    $('#primaryGuestToggle').prop('checked', false);
+
+    $('#primaryGuestToggle').click(function () {
+      if ($(this).is(':checked')) {
+        $(this).parent().after(boxDiv);
+      } else {
+        boxDiv.remove();
+      }
+    })
+
+
+  }
 
   $(".locationchoice-slider").slick({
     slidesToShow: 4,
