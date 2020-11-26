@@ -422,4 +422,14 @@ jQuery(document).ready(function ($) {
     $(this).toggleClass('active')
   })
 
+  $('.scroll-down').click(function () {
+    var destination = $(this).parents('.section').next('.section');
+
+    $("html, body").stop().animate({
+      scrollTop: destination.offset().top,
+    }, 500);
+
+    event.preventDefault();
+  });
+
 });

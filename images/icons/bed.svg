@@ -1,16 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="77.63" height="54" viewBox="0 0 77.63 54">
-  <g id="Group_485" data-name="Group 485" transform="translate(-153.572 -1013.868)">
-    <text id="_2" data-name="2" transform="translate(158.201 1013.868)" font-size="32" font-family="OpenSans-Light, Open Sans" font-weight="300" letter-spacing="0.025em"><tspan x="54.734" y="34">2</tspan></text>
-    <g id="Group_486" data-name="Group 486" transform="translate(154.072 1019.416)">
-      <path id="Path_164" data-name="Path 164" d="M249.628,743.306V729.251h39.484v14.056" transform="translate(-244.509 -729.251)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
-      <path id="Path_165" data-name="Path 165" d="M287.315,736.576H255.367L246.48,741.2v9.254H296.2V741.2Z" transform="translate(-246.48 -724.666)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
-      <line id="Line_25" data-name="Line 25" x2="49.722" transform="translate(0 28.714)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
-      <g id="Group_234" data-name="Group 234" transform="translate(5.119 28.714)">
-        <line id="Line_26" data-name="Line 26" y1="6.377" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
-        <line id="Line_27" data-name="Line 27" y1="6.377" transform="translate(40.32)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
-      </g>
-      <rect id="Rectangle_90" data-name="Rectangle 90" width="10.313" height="4.996" transform="translate(9.158 6.914)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
-      <rect id="Rectangle_91" data-name="Rectangle 91" width="10.313" height="4.996" transform="translate(30.244 6.914)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="50.722" height="35.592" viewBox="0 0 50.722 35.592">
+  <g id="Group_486" data-name="Group 486" transform="translate(0.5 0.5)">
+    <path id="Path_164" data-name="Path 164" d="M249.628,743.306V729.251h39.484v14.056" transform="translate(-244.509 -729.251)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_165" data-name="Path 165" d="M287.315,736.576H255.367L246.48,741.2v9.254H296.2V741.2Z" transform="translate(-246.48 -724.666)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_25" data-name="Line 25" x2="49.722" transform="translate(0 28.714)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
+    <g id="Group_234" data-name="Group 234" transform="translate(5.119 28.714)">
+      <line id="Line_26" data-name="Line 26" y1="6.377" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_27" data-name="Line 27" y1="6.377" transform="translate(40.32)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
     </g>
+    <rect id="Rectangle_90" data-name="Rectangle 90" width="10.313" height="4.996" transform="translate(9.158 6.914)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
+    <rect id="Rectangle_91" data-name="Rectangle 91" width="10.313" height="4.996" transform="translate(30.244 6.914)" fill="none" stroke="#024ab6" stroke-miterlimit="10" stroke-width="1"/>
   </g>
 </svg>

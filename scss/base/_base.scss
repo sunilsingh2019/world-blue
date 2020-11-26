@@ -90,6 +90,14 @@ p {
   }
 }
 
+button {
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
 strong {
   // font-weight: 800
 }

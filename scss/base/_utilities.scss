@@ -109,6 +109,18 @@
     font-size: 23px;
     font-weight: 400;
   }
+
+  &-mini-light {
+    font-family: $font-1;
+    font-size: 23px;
+    font-weight: 300;
+  }
+
+  &-mini-heavy {
+    font-family: $font-1;
+    font-size: 23px;
+    font-weight: 800;
+  }
 }
 
 .link-common {

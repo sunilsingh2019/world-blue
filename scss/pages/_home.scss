@@ -134,17 +134,20 @@
         text-transform: capitalize;
     }
 
-    &-scroll {
+    .scroll-down {
         position: absolute;
         bottom: 0;
-        left: 0;
-        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
         font-family: $font-1;
         font-size: 18px;
         font-weight: 300;
         letter-spacing: 2.7px;
         text-align: center;
         color: $color-sub;
+        background-color: transparent;
+        border-color: transparent;
+        cursor: pointer;
 
         img {
             display: block;
@@ -671,6 +674,14 @@
             font-weight: 800;
             line-height: 30px;
         }
+
+        &-notext &-img {
+            height: 260px;
+        }
+
+        &-notext &-img::after {
+            display: none;
+        }
     }
 }
 
@@ -701,7 +712,8 @@
         }
 
         .form-group {
-            margin-bottom: 0;
+            // margin-bottom: 0;
+            margin-bottom: 23px;
         }
 
         &-selectjs {
@@ -740,6 +752,7 @@
             }
         }
 
+
         input:not([type="submit"]),
         select,
         .select2-container--default .select2-selection--single {
@@ -751,7 +764,6 @@
             width: 100%;
             padding: 7px 22px 10px;
             height: 44px;
-            margin-bottom: 23px;
 
             &,
             &::placeholder {
@@ -770,6 +782,10 @@
 
         &-mb {
             margin-bottom: 66px;
+
+            &-sm {
+                margin-bottom: 32px;
+            }
         }
 
         .form-notice {
@@ -837,13 +853,13 @@
 
             &-location {
                 .form-group {
-                    padding-top: 11.5px;
-                    padding-bottom: 11.5px;
+                    // padding-top: 11.5px;
+                    // padding-bottom: 11.5px;
                     // margin-bottom: 23px;
                 }
 
                 &-item:not(:first-child) {
-                    border-top: 1px solid rgba(#000, .1);
+                    // border-top: 1px solid rgba(#000, .1);
                 }
 
                 &-btn {
@@ -900,6 +916,7 @@
                 .form-group {
                     &-hasicon {
                         padding-left: 20px;
+                        margin-bottom: 0;
                     }
 
                     &-icon {

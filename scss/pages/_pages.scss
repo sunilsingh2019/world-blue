@@ -174,8 +174,10 @@
     }
 
     .homeenq-form-selectjs {
-        margin-bottom: 23px;
+        // margin-bottom: 23px;
     }
+
+
 
     &-contact {
         .homeenq-form-wrap {
@@ -187,10 +189,21 @@
         }
     }
 
+    input.hasDatepicker {
+
+        &,
+        &::placeholder {
+            font-weight: 300;
+        }
+    }
+
     @media (min-width: 1201px) {
         z-index: 1;
         position: relative;
-        margin-top: -825px;
+
+        &-pullup {
+            margin-top: -825px;
+        }
     }
 
     @media (max-width: 1200px) {}
@@ -324,6 +337,40 @@
 
     &-body {
         padding: 40px 44px 30px;
+
+        &-row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+
+    }
+
+    &-inner &-body {
+        padding-right: 11px;
+    }
+
+    &-inner &-body-row {
+        display: flex;
+    }
+
+    &-inner &-body-summary,
+    &-inner &-body-enquire {
+        width: 100%;
+    }
+
+    &-inner &-body-summary {
+        flex: auto;
+        padding-right: 113px;
+    }
+
+    &-inner &-body-enquire {
+        width: 100%;
+        max-width: 526px;
+    }
+
+    &-inner &-banner {
+        padding-top: 54.4px;
     }
 
     &-card {
@@ -375,6 +422,7 @@
 
             &.active svg path {
                 fill: $color-red;
+                stroke: $color-red
             }
         }
 
@@ -655,12 +703,37 @@
 
 
         &-img {
+            position: relative;
             width: 100%;
             height: 519px;
             margin-bottom: 26.5px;
 
             img {
                 @include imgfit
+            }
+
+            &-btn {
+                position: absolute;
+                right: 24px;
+                bottom: 28px;
+                font-family: $font-1;
+                font-size: 20px;
+                font-weight: 300;
+                background-color: #fff;
+                padding: 12px 12.6px;
+                border-color: transparent;
+                border-radius: 10px;
+
+                >* {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                img {
+                    width: auto;
+                    height: 22px;
+                    margin-right: 5.7px;
+                }
             }
         }
 
@@ -675,14 +748,14 @@
 
             &-title {
                 font-family: $font-1;
-                font-size: 23px;
+                font-size: 38px;
                 font-weight: 800;
                 margin-bottom: 5.4px;
             }
 
             &-subtitle {
                 font-family: $font-1;
-                font-size: 23px;
+                font-size: 36px;
                 font-weight: 400;
             }
 
@@ -702,13 +775,167 @@
         }
 
         &-graphic {
+            margin-bottom: 57px;
+
             span {
+                font-family: $font-1;
+                font-size: 32px;
+                font-weight: 300;
+                position: relative;
                 display: inline-block;
+                margin-right: 31px;
 
                 img {
-                    margin-right: 15px;
+                    margin-right: 10px;
                 }
             }
+        }
+
+        &-interact {
+            display: inline-block;
+            border-radius: 10px;
+            padding: 10px 17px;
+            margin-bottom: 50px;
+            background-color: #fff;
+            box-shadow: 0 3px 10px rgba(#000, .16);
+
+            button {
+                width: 78px;
+                text-align: center;
+                background-color: transparent;
+                border-color: transparent;
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    border-right: 1px solid $color-dark-gray;
+                }
+            }
+        }
+
+        &-cont {
+            margin-bottom: 53.3px;
+
+            .heading-mini {
+                margin-bottom: 54px;
+            }
+
+            p {
+                font-size: 23px;
+                font-weight: 300;
+            }
+
+            .link-common {
+                font-family: $font-1;
+                font-size: 20px;
+                font-weight: 700;
+                color: $color-red;
+
+                &::after {
+                    border-bottom-color: $color-red;
+                }
+            }
+        }
+
+        &-features {
+            margin-bottom: 52.4px;
+
+            .heading-mini-light {
+                margin-bottom: 59px;
+            }
+
+            &-list {
+                padding-left: 0;
+                margin-bottom: 0;
+                margin-bottom: 38.5px;
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    font-family: $font-1;
+                    font-size: 23px;
+                    font-weight: 300;
+                    width: 33.333%;
+                    position: relative;
+                    padding: 0 10px 0 48px;
+                    margin-bottom: 35px;
+
+                    img {
+                        @include absoltopcenter;
+                        left: 0;
+                        width: auto;
+                    }
+
+                    span {
+                        margin-left: auto;
+                    }
+                }
+
+            }
+
+            .link-box {
+                background-color: $color-sub;
+            }
+        }
+    }
+
+    &-similar {
+        margin-top: 168.4px;
+        padding-left: 33px;
+        padding-right: 43px;
+
+        .section-head {
+            margin-bottom: 34.5px;
+        }
+
+        .locationchoice-slider {
+            margin-bottom: 0;
+        }
+
+        .locationchoice-slider .slick-next,
+        .locationchoice-slider .slick-prev {
+            bottom: calc(100% + 5px);
+        }
+
+        .slick-dots {
+            display: none;
+        }
+    }
+
+    &-enquire-form-wrap {}
+
+    .infoform {
+        width: 100%;
+        max-width: 488px;
+        margin-top: 37.2px;
+        margin-left: 0;
+        margin-right: 0;
+
+        .homeenq-form-wrap {
+            padding: 20px 51px 67px 40px;
+        }
+
+        .heading-sub {
+            margin-bottom: 27.4px;
+        }
+
+        p {
+            font-size: 23px;
+            font-weight: 300;
+        }
+
+        .homeenq-form {
+            margin-top: 30px;
+        }
+
+        .homeenq-form-box {
+            margin-bottom: 30px;
+        }
+
+        button[type="submit"] {
+            font-size: 23px;
+            font-weight: 400;
+            background-color: $color-sub;
         }
     }
 }
