@@ -42,9 +42,6 @@ jQuery(document).ready(function ($) {
     pause: "false",
   });
 
-
-
-
   //limit characters
   $("p").each(function () {
     "use strict";
@@ -145,7 +142,6 @@ jQuery(document).ready(function ($) {
       }
     })
 
-
   }
 
   $(".locationchoice-slider").slick({
@@ -180,6 +176,22 @@ jQuery(document).ready(function ($) {
     prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"> <g id="Group_962" data-name="Group 962" transform="translate(1211 3413) rotate(180)"> <g id="Path_789" data-name="Path 789" transform="translate(1167 3369)" fill="none"> <path d="M22,0A22,22,0,1,1,0,22,22,22,0,0,1,22,0Z" stroke="none"/> <path d="M 22 1.5 C 19.23185920715332 1.5 16.54730987548828 2.04180908203125 14.02092933654785 3.110378265380859 C 11.57999038696289 4.142810821533203 9.387481689453125 5.621139526367188 7.504310607910156 7.504310607910156 C 5.621139526367188 9.387481689453125 4.142810821533203 11.57999038696289 3.110378265380859 14.02092933654785 C 2.04180908203125 16.54730987548828 1.5 19.23185920715332 1.5 22 C 1.5 24.76814079284668 2.04180908203125 27.45269012451172 3.110378265380859 29.97906112670898 C 4.142810821533203 32.42000961303711 5.621139526367188 34.61251831054688 7.504310607910156 36.49568939208984 C 9.387481689453125 38.37886047363281 11.57999038696289 39.8571891784668 14.02092933654785 40.88962173461914 C 16.54730987548828 41.95819091796875 19.23185920715332 42.5 22 42.5 C 24.76814079284668 42.5 27.45269012451172 41.95819091796875 29.97906112670898 40.88962173461914 C 32.42000961303711 39.8571891784668 34.61251831054688 38.37886047363281 36.49568939208984 36.49568939208984 C 38.37886047363281 34.61251831054688 39.8571891784668 32.42000961303711 40.88962173461914 29.97906112670898 C 41.95819091796875 27.45269012451172 42.5 24.76814079284668 42.5 22 C 42.5 19.23185920715332 41.95819091796875 16.54730987548828 40.88962173461914 14.02092933654785 C 39.8571891784668 11.57999038696289 38.37886047363281 9.387481689453125 36.49568939208984 7.504310607910156 C 34.61251831054688 5.621139526367188 32.42000961303711 4.142810821533203 29.97906112670898 3.110378265380859 C 27.45269012451172 2.04180908203125 24.76814079284668 1.5 22 1.5 M 22 0 C 34.15026092529297 0 44 9.8497314453125 44 22 C 44 34.15026092529297 34.15026092529297 44 22 44 C 9.8497314453125 44 0 34.15026092529297 0 22 C 0 9.8497314453125 9.8497314453125 0 22 0 Z" stroke="none" fill="#fd4f31"/> </g> <path id="Path_788" data-name="Path 788" d="M472.608,676l-8.117,8.308L456.375,676" transform="translate(509.878 3854.643) rotate(-90)" fill="none" stroke="#fd4f31" stroke-width="1.5"/> </g></svg></button>',
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"> <g id="Group_961" data-name="Group 961" transform="translate(-1167 -3369)"> <g id="Path_789" data-name="Path 789" transform="translate(1167 3369)" fill="none"> <path d="M22,0A22,22,0,1,1,0,22,22,22,0,0,1,22,0Z" stroke="none"/> <path d="M 22 1.5 C 19.23185920715332 1.5 16.54730987548828 2.04180908203125 14.02092933654785 3.110378265380859 C 11.57999038696289 4.142810821533203 9.387481689453125 5.621139526367188 7.504310607910156 7.504310607910156 C 5.621139526367188 9.387481689453125 4.142810821533203 11.57999038696289 3.110378265380859 14.02092933654785 C 2.04180908203125 16.54730987548828 1.5 19.23185920715332 1.5 22 C 1.5 24.76814079284668 2.04180908203125 27.45269012451172 3.110378265380859 29.97906112670898 C 4.142810821533203 32.42000961303711 5.621139526367188 34.61251831054688 7.504310607910156 36.49568939208984 C 9.387481689453125 38.37886047363281 11.57999038696289 39.8571891784668 14.02092933654785 40.88962173461914 C 16.54730987548828 41.95819091796875 19.23185920715332 42.5 22 42.5 C 24.76814079284668 42.5 27.45269012451172 41.95819091796875 29.97906112670898 40.88962173461914 C 32.42000961303711 39.8571891784668 34.61251831054688 38.37886047363281 36.49568939208984 36.49568939208984 C 38.37886047363281 34.61251831054688 39.8571891784668 32.42000961303711 40.88962173461914 29.97906112670898 C 41.95819091796875 27.45269012451172 42.5 24.76814079284668 42.5 22 C 42.5 19.23185920715332 41.95819091796875 16.54730987548828 40.88962173461914 14.02092933654785 C 39.8571891784668 11.57999038696289 38.37886047363281 9.387481689453125 36.49568939208984 7.504310607910156 C 34.61251831054688 5.621139526367188 32.42000961303711 4.142810821533203 29.97906112670898 3.110378265380859 C 27.45269012451172 2.04180908203125 24.76814079284668 1.5 22 1.5 M 22 0 C 34.15026092529297 0 44 9.8497314453125 44 22 C 44 34.15026092529297 34.15026092529297 44 22 44 C 9.8497314453125 44 0 34.15026092529297 0 22 C 0 9.8497314453125 9.8497314453125 0 22 0 Z" stroke="none" fill="#fd4f31"/> </g> <path id="Path_788" data-name="Path 788" d="M472.608,676l-8.117,8.308L456.375,676" transform="translate(509.878 3854.643) rotate(-90)" fill="none" stroke="#fd4f31" stroke-width="1.5"/> </g></svg></button>',
 
+  });
+
+  $('.aptlisting-card-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    dots: true,
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="31.609" height="31.609" viewBox="0 0 31.609 31.609"> <g id="Group_228" data-name="Group 228" transform="translate(0.5 0.5)"> <circle id="Ellipse_27" data-name="Ellipse 27" cx="15.305" cy="15.305" r="15.305" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/> <path id="Path_160" data-name="Path 160" d="M67.983,489.392,61.9,483.306l6.086-6.086" transform="translate(-50.678 -468.001)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/> </g></svg></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="31.609" height="31.609" viewBox="0 0 31.609 31.609"> <g id="Group_227" data-name="Group 227" transform="translate(0.5 0.5)"> <circle id="Ellipse_26" data-name="Ellipse 26" cx="15.305" cy="15.305" r="15.305" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/> <path id="Path_159" data-name="Path 159" d="M565.777,477.22l6.086,6.086-6.086,6.086" transform="translate(-552.473 -468.001)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/> </g></svg></button>',
+  })
+
+  // sticky init
+  $(".sticky-div").stick_in_parent({
+    // offset_top: 100,
+    // offset_bottom: 100
   });
 
   $('.locationchoice').each(function () {
@@ -406,34 +418,5 @@ jQuery(document).ready(function ($) {
 
   });
 
-  // $('.input-number-toggler').click(function () {
-  //   var inputField = $(this).parents().siblings('input');
-  //   var inputVal = parseInt(inputField.val());
-  //   var maxVal = parseInt(inputField.attr('max'));
-  //   console.log(maxVal);
-
-
-  //   if (!inputVal) {
-  //     $(inputField).val('1 Person');
-  //     return;
-  //   }
-
-  //   if ($(this).hasClass('input-number-plus')) {
-  //     $(inputField).val(inputVal + 1 + ' People');
-  //     console.log('its a plus');
-  //   }
-  //   if ($(this).hasClass('input-number-minus')) {
-  //     if (inputVal == 1) {
-  //       return;
-  //     }
-  //     if (inputVal == 3) {
-  //       $(inputField).val('1 Person');
-  //     }
-  //     $(inputField).val(inputVal - 1 + ' People');
-  //     console.log('its a minus');
-  //   }
-
-  //   console.log('input Value: ', inputVal)
-  // })
 
 });
