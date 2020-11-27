@@ -138,8 +138,7 @@
 
         &.nav-contact {
             margin-right: 0;
-            margin-left: 41px;
-            text-align: center;
+
 
             >a {
                 color: #fff;
@@ -159,13 +158,13 @@
         }
     }
 
-    @include respond(smdesktop-min) {
+    @media (min-width: 1201px) {
         >li {
             padding: 0;
         }
     }
 
-    @include respond(smdesktop) {
+    @media (max-width: 1200px) {
         >li {
             &:not(:last-child) {
                 margin-right: 0;
@@ -173,12 +172,16 @@
         }
     }
 
-    @include respond(tabland-min) {
+    @media (min-width: 992px) {
         justify-content: flex-end;
         padding-top: 16px;
         padding-bottom: 27px;
 
         >li {
+            &.nav-contact {
+                margin-left: 41px;
+                text-align: center;
+            }
 
             &.has-submenu {
                 &::after {
@@ -245,13 +248,11 @@
                 margin-right: 10px;
             }
 
-            >a {
-                font-size: 12px;
-            }
+            >a {}
         }
     }
 
-    @include respond(tabland) {
+    @media (max-width: 991px) {
         display: block;
 
         >li {
@@ -259,6 +260,7 @@
             margin-bottom: 6px;
 
             >a {
+                color: #fff;
                 padding: 10px 20px;
 
                 &:hover {}
@@ -372,7 +374,7 @@
         }
     }
 
-    @include respond(tabland-min) {
+    @media (min-width: 992px) {
         // border: 1px solid #fff;
 
         &::before {
@@ -384,6 +386,12 @@
 
         span {
             background-color: #fff;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &.open {
+            margin-top: -5px;
         }
     }
 

@@ -95,6 +95,10 @@
     font-size: 50px;
     font-weight: 400;
     display: block;
+
+    @media (max-width: 991px) {
+      font-size: 32px;
+    }
   }
 
   &-sub {
@@ -167,12 +171,12 @@
 
 .btn {
   font-family: $font-1;
-  font-size: 17px;
-  letter-spacing: 1.19px;
-  line-height: 20px;
-  display: inline-block;
-  padding: 15px 30px;
-  border-radius: 10px;
+  font-size: 23px;
+  font-weight: 800;
+  border-radius: 13px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all .2s ease-in;
 
   img {
     width: 15px;
@@ -186,6 +190,16 @@
   &-main {
     color: #fff;
     background-color: $color-main;
+  }
+
+  &-sub {
+    color: #fff;
+    background-color: $color-sub;
+  }
+
+  &-red {
+    color: #fff;
+    background-color: $color-red;
   }
 
   &-main-alt {

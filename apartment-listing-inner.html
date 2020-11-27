@@ -40,27 +40,19 @@
                             <nav id="menu">
                                 <ul class="navul">
                                     <li class="has-submenu">
-                                        <a href="#">Corporate Apartments</a>
+                                        <a href="./apartment-listing.html">Corporate Apartments</a>
                                         <img src="images/icons/caret-down.svg" alt="">
                                         <ul>
-                                            <li><a href="#">Holiday Bookings</a></li>
+                                            <li><a href="./apartment-listing-inner.html">Holiday Bookings</a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav-contact"><a href="#">Contact Us</a></li>
+                                    <li class="nav-contact"><a href="./contact.html">Contact Us</a></li>
                                     <li class="nav-heart"><a href="#"><img src="images/icons/heart.png" alt=""></a></li>
                                 </ul>
                             </nav>
                         </div>
-                        <div class="header-main-btns">
-                            <a data-toggle="modal" data-target="#modalSearch" href="#"
-                                class="header-btn-search modal-trigger-search"><img src="images/icons/search.svg"
-                                    alt=""></a>
-                            <div class="header-main-social dis-sm">
-                                <span><a href="#"><img src="images/icons/facebook.svg" alt=""></a></span>
-                                <span><a href="#"><img src="images/icons/instagram.svg" alt=""></a></span>
-                                <span><a href="#"><img src="images/icons/youtube.svg" alt=""></a></span>
-                            </div>
-                        </div>
+                        <!-- <div class="header-main-btns">
+              </div> -->
                     </div>
                 </div>
             </div>
@@ -76,13 +68,20 @@
                                 <div class="aptlisting-main">
                                     <div class="aptlisting-nav">
                                         <div class="aptlisting-nav-arrow aptlisting-nav-prev">
-                                            <a href="#"><img src="images/icons/caret-left.svg" alt=""> Previous</a>
+                                            <a href="#" class="aptlisting-nav-arrow-link">
+                                                <img class="aptlisting-nav-img" src="images/icons/caret-left.svg"
+                                                    alt="">
+                                                <span class="aptlisting-nav-text">Previous</span>
+                                            </a>
                                         </div>
                                         <div class="aptlisting-nav-title">
                                             $235, Property in Sydney
                                         </div>
                                         <div class="aptlisting-nav-arrow aptlisting-nav-next">
-                                            <a href="#"> Next <img src="images/icons/caret-right.svg" alt="">
+                                            <a href="#" class="aptlisting-nav-arrow-link">
+                                                <span class="aptlisting-nav-text">Next</span>
+                                                <img class="aptlisting-nav-img" src="images/icons/caret-right.svg"
+                                                    alt="">
                                             </a>
                                         </div>
                                         <div class="aptlisting-nav-exit">
@@ -235,7 +234,7 @@
                                                     <li>Name of the place</li>
                                                 </ul>
 
-                                                <div class="aptlisting-enquire-form-wrap sticky-div">
+                                                <div class="aptlisting-enquire-form-wrap enquire-form-sticky">
                                                     <div class="infoform infoform-enquire">
                                                         <div class="homeenq-form-wrap">
                                                             <h3 class="heading-sub">Enquire Now</h3>
@@ -345,7 +344,7 @@
                                                                         <option>15</option>
                                                                     </select>
                                                                 </div>
-                                                                <button type="submit">Send</button>
+                                                                <button class="btn btn-sub" type="submit">Send</button>
                                                             </form>
                                                         </div>
                                                     </div>
