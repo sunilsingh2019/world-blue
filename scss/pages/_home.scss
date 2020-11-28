@@ -583,33 +583,65 @@
                 position: relative;
                 width: 99px;
                 height: 99px;
+                overflow: visible;
 
                 path,
-                line {
-                    transition: all .25s ease-in;
+                line,
+                circle {
+                    transition: all .5s ease-in;
                 }
             }
 
-            #Line_203 {
-                // transform-origin: left top 0px;
-                transform: translate(51.644px, 28.286px);
+            .svg-icon g:first-child {
+                // display: none;
             }
 
-            #Line_204 {
-                transform: translate(51.644px, 53.158px);
-            }
+            // &-clock {
+            //     #Line_203 {
+            //         // transform-origin: left top 0px;
+            //         transform: translate(51.644px, 28.286px);
+            //     }
+
+            //     #Line_204 {
+            //         transform: translate(51.644px, 53.158px);
+            //     }
+
+            //     #Ellipse_360 {
+            //         stroke-dasharray: 300px 330px;
+            //         stroke-dashoffset: 640px;
+            //         transform: translate(45.257px, 45.258px) rotate(246deg);
+            //         transform-box: fill-box;
+            //         transform-origin: center;
+            //     }
+
+            //     #Path_855 {
+            //         transform: translate(45.314px, -416.318px);
+            //         transform-box: fill-box;
+            //         transform-origin: center;
+            //     }
+            // }
         }
     }
 
-    &:hover &-card-icon-clock {
-        #Line_203 {
-            transform: translate(38px, 57px) rotate(-17deg);
-        }
+    // &:hover &-card-icon-clock {
+    //     #Line_203 {
+    //         transform: translate(38px, 57px) rotate(-17deg);
+    //     }
 
-        #Line_204 {
-            transform: translate(26px, 29px) rotate(-15deg);
-        }
-    }
+    //     #Line_204 {
+    //         transform: translate(26px, 29px) rotate(-15deg);
+    //     }
+
+    //     #Ellipse_360 {
+    //         stroke-dashoffset: 500px;
+    //         transform: translate(45.257px, 45.258px) rotate(90deg);
+    //     }
+
+    //     #Path_855 {
+    //         transform: translate(81.314px, -333.318px) rotate(-145deg);
+    //     }
+    // }
+
 
     @media (max-width: 567px) {
         .section-head {
@@ -1095,6 +1127,22 @@
             }
         }
 
+    }
+
+    @media (max-width: 767px) {
+        &-form {
+            &-box-location &-row {
+                flex-wrap: wrap;
+            }
+
+            &-box-location &-box-col:nth-child(1) {
+                width: 100%;
+            }
+
+            &-box-location &-box-col:nth-child(n+2) {
+                width: 50%;
+            }
+        }
     }
 }
 

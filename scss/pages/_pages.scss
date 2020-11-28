@@ -441,30 +441,28 @@
                 height: auto;
             }
 
-            &-col:nth-child(3) .select2-container--default .select2-selection--single .select2-selection__rendered {
+            .homeenq-form-box-location .select2-container--default .select2-selection--single .select2-selection__rendered {
                 padding-top: 6px;
                 padding-bottom: 12px;
                 padding-left: 0;
                 padding-right: 20px;
             }
 
-            &-col:nth-child(3) .homeenq-form-box-row {
+            .homeenq-form-box-location .homeenq-form-box-row {
                 flex-wrap: nowrap;
             }
 
-            &-col:nth-child(3) .homeenq-form-box-col:nth-child(1) {
+            .homeenq-form-box-location .homeenq-form-box-col:nth-child(1) {
                 width: 45%;
             }
 
-            &-col:nth-child(3) .homeenq-form-box-col:nth-child(2) {
+            .homeenq-form-box-location .homeenq-form-box-col:nth-child(2) {
                 width: 20%;
             }
 
-            &-col:nth-child(3) .homeenq-form-box-col:nth-child(3) {
+            .homeenq-form-box-location .homeenq-form-box-col:nth-child(3) {
                 width: 35%;
             }
-
-            &-col:nth-child(4) .homeenq-form-box-date input:not([type="submit"]) {}
 
             .homeenq-form-selectjs .select2-selection__arrow {
                 right: 7px !important;
@@ -1220,7 +1218,6 @@
     }
 
     @media (max-width: 767px) {
-
         &-body {
             padding-left: 20px;
             padding-right: 20px;
@@ -1228,6 +1225,23 @@
 
         &-summary-features-list li {
             width: 50%;
+        }
+
+        .homeenq-form-box-location .homeenq-form-box-row {
+            flex-wrap: wrap;
+        }
+
+        .homeenq-form-box-location .homeenq-form-box-col:nth-child(1) {
+            width: 100%;
+        }
+
+        .homeenq-form-box-location .homeenq-form-box-col:nth-child(2),
+        .homeenq-form-box-location .homeenq-form-box-col:nth-child(3) {
+            width: 50%;
+        }
+
+        .homeenq-form-box-location .homeenq-form-box-col:nth-child(2) {
+            padding-left: 15px;
         }
     }
 

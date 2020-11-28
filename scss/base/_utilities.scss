@@ -724,3 +724,83 @@
     font-weight: 300;
   }
 }
+
+#svgClock {
+  .st0 {
+    fill: none;
+    stroke: #69CF62;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
+
+  .st1 {
+    fill: none;
+    stroke: #00204F;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+
+  .st2 {
+    fill: none;
+    stroke: #69CF62;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+}
+
+#svgPoint {
+  .st0 {
+    fill: none;
+    stroke: #00204F;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
+
+  .st1 {
+    fill: none;
+    stroke: #69CF62;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
+}
+
+#svgSmileBubble {
+  .st0 {
+    fill: none;
+    stroke: #00204F;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
+
+  .st1 {
+    fill: none;
+    stroke: #69CF62;
+    stroke-width: 3;
+    stroke-linejoin: round;
+  }
+
+  .st2 {
+    fill: none;
+    stroke: #69CF62;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
+}
+
+#svgForm {
+  .st0 {
+    fill: none;
+    stroke: #69CF62;
+    stroke-width: 3;
+    stroke-linejoin: round;
+  }
+
+  .st1 {
+    fill: none;
+    stroke: #00204F;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+  }
+}

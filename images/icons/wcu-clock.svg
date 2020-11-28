@@ -1,15 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102">
-  <g id="Group_1262" data-name="Group 1262" transform="translate(-301.5 -1571.5)">
-    <g id="Group_1261" data-name="Group 1261" transform="translate(303 1573)">
-      <circle id="Ellipse_136" data-name="Ellipse 136" cx="4.243" cy="4.243" r="4.243" transform="translate(45.257 45.258)" fill="none" stroke="#69cf62" stroke-miterlimit="10" stroke-width="3"/>
-      <path id="Path_854" data-name="Path 854" d="M-15,421.528a49.339,49.339,0,0,1,20.1-4.253,49.5,49.5,0,1,1-49.5,49.5,49.384,49.384,0,0,1,16.959-37.3" transform="translate(44.4 -417.275)" fill="none" stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
-      <line id="Line_199" data-name="Line 199" y2="5.657" transform="translate(49.5 7.072)" fill="none" stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
-      <line id="Line_200" data-name="Line 200" y2="5.657" transform="translate(49.5 84.858)" fill="none" stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
-      <line id="Line_201" data-name="Line 201" x1="5.657" transform="translate(85.564 48.793)" fill="none" stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
-      <line id="Line_202" data-name="Line 202" x1="5.657" transform="translate(7.779 48.793)" fill="none" stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
-      <line id="Line_203" data-name="Line 203" y1="16.971" x2="10.585" transform="translate(51.644 28.286)" fill="none" stroke="#69cf62" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
-      <line id="Line_204" data-name="Line 204" x2="13.414" y2="21.8" transform="translate(51.644 53.158)" fill="none" stroke="#69cf62" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
-      <path id="Path_855" data-name="Path 855" d="M-34,428.157l6,.214-.214,6" transform="translate(45.314 -416.318)" fill="none" stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.17 102.18">
+    <g id="Group_1262" data-name="Group 1262">
+        <g id="Group_1261" data-name="Group 1261">
+            <circle id="Ellipse_136" data-name="Ellipse 136" cx="50.88" cy="51.11" r="4.24" fill="none" stroke="#69cf62"
+                stroke-miterlimit="10" stroke-width="3" />
+            <path id="Path_854" data-name="Path 854" d="M30.9,5.75a49.58,49.58,0,1,1-12.44,8"
+                transform="translate(-0.12 0.11)" fill="none" stroke="#00204f" stroke-linecap="round"
+                stroke-miterlimit="10" stroke-width="3" />
+            <line id="Line_199" data-name="Line 199" x1="50.88" y1="8.68" x2="50.88" y2="14.34" fill="none"
+                stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" />
+            <line id="Line_200" data-name="Line 200" x1="50.88" y1="86.47" x2="50.88" y2="92.13" fill="none"
+                stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" />
+            <line id="Line_201" data-name="Line 201" x1="92.6" y1="50.4" x2="86.94" y2="50.4" fill="none"
+                stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" />
+            <line id="Line_202" data-name="Line 202" x1="14.82" y1="50.4" x2="9.16" y2="50.4" fill="none"
+                stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" />
+            <line id="Line_203" data-name="Line 203" x1="53.02" y1="46.87" x2="63.61" y2="29.9" fill="none"
+                stroke="#69cf62" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" />
+            <line id="Line_204" data-name="Line 204" x1="53.02" y1="54.77" x2="66.44" y2="76.57" fill="none"
+                stroke="#69cf62" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" />
+            <path id="Path_855" data-name="Path 855" d="M12.81,13.34l6,.21-.21,6" transform="translate(-0.12 0.11)"
+                fill="none" stroke="#00204f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" />
+        </g>
     </g>
-  </g>
 </svg>

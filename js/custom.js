@@ -219,8 +219,8 @@ jQuery(document).ready(function ($) {
     var maximumSlides = $(this).find('.slick-dots').children('li').length;
     $(this).find('.locationchoice-slider-num').html('1 / ' + maximumSlides);
 
-    console.log(maximumSlides);
-    console.log(sliderDiv);
+    // console.log(maximumSlides);
+    // console.log(sliderDiv);
   })
 
 
@@ -467,5 +467,221 @@ jQuery(document).ready(function ($) {
   }
   orderHeaderSticky();
 
+  function clockSvgSnap() {
+    var svgItem = Snap.select('#svgClock');
+    var outerCircle = Snap.select('#svgClock #Path_854');
+    var arrow = Snap.select('#svgClock #Path_855');
+    var longHand = Snap.select('#svgClock #Line_204');
+    var shortHand = Snap.select('#svgClock #Line_203');
 
+    $('#svgIconsSection').mouseenter(function () {
+      outerCircle.animate({
+        d: "M29.4,4.3C35.7,1.4,42.6,0,49.5,0C76.8,0,99,22.2,99,49.5S76.8,99,49.5,99"
+      }, 300);
+      arrow.animate({
+        d: "M50.5,103.3l-4.4-4.1l4.1-4.4"
+      }, 300);
+      longHand.animate({
+        x1: "45",
+        y1: "46.1",
+        x2: "31.5",
+        y2: "24.3"
+      }, 300);
+      shortHand.animate({
+        x1: "45",
+        y1: "54",
+        x2: "34.4",
+        y2: "70.9"
+      }, 300);
+    }).mouseleave(function () {
+      outerCircle.animate({
+        d: "M29.4,4.3C35.7,1.4,42.6,0,49.5,0C76.8,0,99,22.2,99,49.5S76.8,99,49.5,99S0,76.8,0,49.5 c0-14.3,6.2-27.9,17-37.3"
+      }, 300);
+      arrow.animate({
+        d: "M11.3,11.8l6,0.2l-0.2,6"
+      }, 300);
+      longHand.animate({
+        x1: "51.6",
+        y1: "53.2",
+        x2: "65.1",
+        y2: "75"
+      }, 300);
+      shortHand.animate({
+        x1: "51.6",
+        y1: "45.3",
+        x2: "62.2",
+        y2: "28.3"
+      }, 300);
+    });
+  }
+
+  function pointSvgSnap() {
+    var svgItem = Snap.select('#svgPoint');
+    var hand = Snap.select('#svgPoint #Path_869');
+    var handSleeve = Snap.select('#svgPoint #Path_870');
+    var innerCircle = Snap.select('#svgPoint #Path_871');
+    var dot = Snap.select('#svgPoint #Line_217');
+
+    $('#svgIconsSection').mouseenter(function () {
+      svgItem.animate({
+        viewBox: "0 0 84.8 93"
+      }, 300);
+      hand.animate({
+        d: "M747.1,2187.3l-1.7-5.6c-5.7-2.2-8.5-6.4-10.9-8.9l-6-6.3c-0.6-1.8,2.7-4.9,5.2-3.6 c2.5,1.3,4.8,2.6,4.8,2.6l1.8-0.5l-6.9-22.4c-0.6-2.1,0.6-4.3,2.7-4.9l0,0c2-0.6,4.2,0.5,4.8,2.6c0,0,0,0,0, 0l4.6,15l13.8-1.3 c3.3-0.3,6.6,1.2,7.7,4.9l2.9,9.3c0.6,2.1-0.7,4.2-0.2,6.2l1.7,5.6L747.1,2187.3z"
+      }, 300);
+      handSleeve.animate({
+        d: "M745.1,2194.1l-1.7-5.6l29.9-9.1l1.7,5.6"
+      }, 300);
+      innerCircle.animate({
+        d: "M722.5,2153.8c-11.9,0-21.5-9.6-21.5-21.5"
+      }, 300);
+      dot.animate({
+        y2: "2116.5"
+      }, 300);
+
+    }).mouseleave(function () {
+      svgItem.animate({
+        viewBox: "0 0 71.4 93.4"
+      }, 300);
+      hand.animate({
+        d: "M734.2,2189v-5.9c-4.8-3.7-6.3-8.6-7.8-11.7l-3.9-7.8c0-1.9,4-3.9,6-2c2,2,3.8,3.9,3.8,3.9h1.9 v-23. 5c0-2.2,1.8-3.9,4-3.9h0c2.1,0,3.9,1.7,3.9,3.9c0,0,0,0,0,0v15.6l13.6,2.8c3.3,0.7,6,3.1,6,7v9.8c0,2.2-2,3.8-2,5.9v5.9 H734.2z"
+      }, 300);
+      handSleeve.animate({
+        d: "M730.3,2199.9v-5.9h31.3v5.9.1l1.7,5.6"
+      }, 300);
+      innerCircle.animate({
+        d: "M728.3,2153c-11.4,3.2-23.3-3.4-26.6-14.8c-3.2-11.4,3.4-23.3,14.8-26.6s23.3,3.4,26.6,14.8 c0.5,1.9,0.8,3.9,0.8,5.9"
+      }, 300);
+      dot.animate({
+        y2: "2120.6"
+      }, 300);
+    });
+
+  }
+
+  function smileSvgSnap() {
+    var svgItem = Snap.select('#svgSmileBubble');
+    var eye = Snap.select('#svgSmileBubble #Line_206');
+    var smile = Snap.select('#svgSmileBubble #Path_865');
+
+    $('#svgIconsSection').mouseenter(function () {
+      eye.animate({
+        y2: "445.4"
+      }, 300);
+      smile.animate({
+        d: "M633.2,471.4c-13.2,0-23.8-8.3-23.8-18.6"
+      }, 300);
+    }).mouseleave(function () {
+      eye.animate({
+        y2: "450.7"
+      }, 300);
+      smile.animate({
+        d: "M657,452.8c0,10.3-10.7,18.6-23.8,18.6s-23.8-8.3-23.8-18.6"
+      }, 300);
+    }, );
+
+  }
+
+  function formSvgSnap() {
+    var svgItem = Snap.select('#svgForm');
+    var wrapper = Snap.select('#svgForm #Group_1265');
+    var wrapperIn = Snap.select('#svgForm #Group_1266');
+    var border = Snap.select('#svgForm #Path_866');
+    var line1 = Snap.select('#svgForm #Line_207');
+    var line2 = Snap.select('#svgForm #Line_208');
+    var line3 = Snap.select('#svgForm #Line_209');
+    var line4 = Snap.select('#svgForm #Line_210');
+    var line5 = Snap.select('#svgForm #Line_211');
+
+    $('#svgIconsSection').mouseenter(function () {
+      wrapper.animate({
+        transform: "translate(919.556 451.635)"
+      }, 300);
+      wrapperIn.animate({
+        transform: "translate(919.556 487.465)"
+      }, 300);
+      border.animate({
+        d: "M990.4,518.7h-76.7v-97.6h76.7V518.7z"
+      }, 300);
+      line1.animate({
+        x1: "0",
+        y1: "0",
+        x2: "28.4",
+        y2: "0"
+      }, 300);
+      line2.animate({
+        x1: "0",
+        y1: "11.6",
+        x2: "28.4",
+        y2: "11.6"
+      }, 300);
+      line3.animate({
+        x1: "0",
+        y1: "23.2",
+        x2: "27.9",
+        y2: "23.2"
+      }, 300);
+      line4.animate({
+        x1: "0",
+        y1: "0",
+        x2: "28.4",
+        y2: "0"
+      }, 300);
+      line5.animate({
+        x1: "-0.4",
+        y1: "11.6",
+        x2: "18.6",
+        y2: "11.6"
+      }, 300);
+
+    }).mouseleave(function () {
+      wrapper.animate({
+        transform: ""
+      }, 300);
+      wrapperIn.animate({
+        transform: ""
+      }, 300);
+      border.animate({
+        d: "M990.4,500.1v18.6h-76.7v-97.6h76.7V500.1z"
+      }, 300);
+      line1.animate({
+        x1: "919.6",
+        y1: "451.6",
+        x2: "984.5",
+        y2: "451.6"
+      }, 300);
+      line2.animate({
+        x1: "919.6",
+        y1: "463.2",
+        x2: "984.5",
+        y2: "463.2"
+      }, 300);
+      line3.animate({
+        x1: "919.6",
+        y1: "474.9",
+        x2: "984.1",
+        y2: "474.9"
+      }, 300);
+      line4.animate({
+        x1: "919.6",
+        y1: "487.5",
+        x2: "984.5",
+        y2: "487.5"
+      }, 300);
+      line5.animate({
+        x1: "919.6",
+        y1: "499.1",
+        x2: "958",
+        y2: "499.1"
+      }, 300);
+
+    }, );
+  }
+
+  if ($('#svgIconsSection')[0]) {
+    smileSvgSnap();
+    pointSvgSnap();
+    clockSvgSnap();
+    formSvgSnap();
+  }
 });
